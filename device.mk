@@ -28,6 +28,14 @@ PRODUCT_SYSTEM_PROPERTIES += \
 # Characteristics
 PRODUCT_CHARACTERISTICS := nosdcard
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.3-service.xiaomi \
+    libudfpshandler
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/init.diting.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.diting.rc
+
 # Kernel
 KERNEL_PREBUILT_DIR := $(LOCAL_PATH)-kernel
 
@@ -39,6 +47,7 @@ PRODUCT_PACKAGES += \
     DitingpSettingsProviderOverlay \
     DitingpWifiOverlay \
     DitingpWifiMainlineOverlay \
+    DitingSettingsOverlay \
     DitingSettingsProviderOverlay \
     DitingSystemUIOverlay \
     DitingWifiOverlay \

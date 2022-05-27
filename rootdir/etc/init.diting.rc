@@ -1,0 +1,15 @@
+#
+# Copyright (C) 2021-2024 Paranoid Android
+# SPDX-License-Identifier: Apache-2.0
+#
+
+on boot
+    chmod 0666 /dev/goodix_fp
+    chown system system /dev/goodix_fp
+    chmod 0666 /dev/input/event2
+
+on post-fs-data
+    mkdir /data/vendor/fpdump 0770 system system
+    mkdir /data/vendor/goodix 0770 system system
+    mkdir /data/vendor/fingerprint 0770 system system
+    mkdir /mnt/vendor/persist/goodix 0770 system system
