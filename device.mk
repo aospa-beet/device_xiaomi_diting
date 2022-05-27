@@ -184,7 +184,8 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1.vendor
+    android.hardware.biometrics.fingerprint@2.3-service.xiaomi \
+    libudfpshandler
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
@@ -228,6 +229,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.diting.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.diting.rc \
     $(LOCAL_PATH)/rootdir/etc/init.diting.perf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.diting.perf.rc \
     $(LOCAL_PATH)/rootdir/etc/init.target.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.target.rc \
+    $(LOCAL_PATH)/rootdir/etc/init.mi_udfps.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mi_udfps.rc \
     $(LOCAL_PATH)/rootdir/etc/ueventd.diting.rc:$(TARGET_COPY_OUT_ODM)/etc/ueventd.rc
 
 # IR
