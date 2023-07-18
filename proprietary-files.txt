@@ -1097,6 +1097,9 @@ product/etc/displayconfig/display_id_4630946480857061762.xml:vendor/etc/displayc
 product/etc/displayconfig/display_id_4630946545580055170.xml:vendor/etc/displayconfig/display_id_4630946545580055170.xml
 vendor/etc/snapdragon_color_libs_config.xml
 
+# EuiccGoogle - from lynx-user 14 AP1A.240405.002 11480754 release-keys
+product/priv-app/EuiccGoogle/EuiccGoogle.apk|f1b7f3906ed81c6555191e6a9d350377b9710f11
+
 # Fingerprint
 odm/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so
 vendor/lib64/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod.default.so
