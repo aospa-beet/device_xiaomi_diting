@@ -169,6 +169,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_VENDOR_PROPERTIES += \
     drm.service.enabled=true
 
+#eUICC
+PRODUCT_PACKAGES += \
+   XiaomiEuicc
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml
+
 # Fastboot
 PRODUCT_PACKAGES += \
     fastbootd

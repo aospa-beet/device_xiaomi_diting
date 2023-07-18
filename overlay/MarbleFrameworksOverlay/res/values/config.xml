@@ -573,6 +573,50 @@
     <!-- How long it takes for the HW to start illuminating after the illumination is requested. -->
     <integer name="config_udfps_illumination_transition_ms">0</integer>
 
+    <!-- Device-specific array of SIM slot indexes which are are embedded eUICCs.
+         e.g. If a device has two physical slots with indexes 0, 1, and slot 1 is an
+         eUICC, then the value of this array should be:
+             <integer-array name="non_removable_euicc_slots">
+                 <item>1</item>
+             </integer-array>
+         If a device has three physical slots and slot 1 and 2 are eUICCs, then the value of
+         this array should be:
+             <integer-array name="non_removable_euicc_slots">
+                <item>1</item>
+                <item>2</item>
+             </integer-array>
+         This is used to differentiate between removable eUICCs and built in eUICCs, and should
+         be set by OEMs for devices which use eUICCs. -->
+    <integer-array name="non_removable_euicc_slots">
+        <item>1</item>
+    </integer-array>
+
+    <!-- An array of device capabilities defined by GSMA SGP.22 v2.0.
+         The first item is the capability name that the device supports. The second item is the
+         major version. The minor and revision versions are default to 0s.
+         The device capabilities and their definition in the spec are:
+             gsm : gsmSupportedRelease
+             utran : utranSupportedRelease
+             cdma1x : cdma2000onexSupportedRelease
+             hrpd : cdma2000hrpdSupportedRelease
+             ehrpd : cdma2000ehrpdSupportedRelease
+             eutran : eutranSupportedRelease
+             nfc : contactlessSupportedRelease
+             crl : rspCrlSupportedVersion
+             nrepc : nrEpcSupportedRelease
+             nr5gc : nr5gcSupportedRelease
+             eutran5gc : eutran5gcSupportedRelease
+    -->
+    <string-array name="config_telephonyEuiccDeviceCapabilities">
+        <item>gsm,8</item>
+        <item>utran,9</item>
+        <item>eutran,15</item>
+    </string-array>
+
+    <!-- List of comma separated package names for which we the system will not show crash, ANR,
+         etc. dialogs. -->
+    <string translatable="false" name="config_appsNotReportingCrashes">com.google.android.euicc</string>
+
     <!-- Shutdown if the battery temperature exceeds (this value * 0.1) Celsius. -->
     <integer name="config_shutdownBatteryTemperature">600</integer>
 
