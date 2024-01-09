@@ -66,7 +66,7 @@ BOARD_BOOTCONFIG := \
     androidboot.usbcontroller=a600000.dwc3
 
 # OTA
-TARGET_OTA_ASSERT_DEVICE := diting,ditingp
+TARGET_OTA_ASSERT_DEVICE := diting|ditingp
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
