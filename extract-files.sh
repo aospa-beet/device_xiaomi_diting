@@ -74,7 +74,7 @@ function blob_fixup() {
             "${PATCHELF}" --replace-needed "ls_nq_client-v1.so" "ls_nq_client.so" "${2}"
             "${PATCHELF}" --replace-needed "se_nq_extn_client-v1.so" "se_nq_extn_client.so" "${2}"
             ;;
-        vendor/etc/camera/marble*_motiontuning.xml)
+        vendor/etc/camera/diting*_motiontuning.xml)
             sed -i 's/xml=version/xml\ version/g' "${2}"
             ;;
         vendor/etc/camera/pureView_parameter.xml)
