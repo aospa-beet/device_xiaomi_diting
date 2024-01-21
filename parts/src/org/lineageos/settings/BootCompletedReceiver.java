@@ -31,7 +31,6 @@ import org.lineageos.settings.display.ColorService;
 import org.lineageos.settings.dolby.DolbyUtils;
 import org.lineageos.settings.doze.AodBrightnessService;
 import org.lineageos.settings.doze.PocketService;
-import org.lineageos.settings.gestures.GestureUtils;
 import org.lineageos.settings.thermal.ThermalUtils;
 import org.lineageos.settings.touch.HighTouchPollingService;
 import org.lineageos.settings.touch.TouchOrientationService;
@@ -69,11 +68,6 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         // Data is now accessible (user has just unlocked).
         DolbyUtils.getInstance(context).onBootCompleted();
         ThermalUtils.startService(context);
-
-        // Gesture: Double tap FPS
-        if (GestureUtils.isFpDoubleTapEnabled(context)) {
-            GestureUtils.setFingerprintNavigation(true);
-        }
     }
 
     private static void overrideHdrTypes(Context context) {
