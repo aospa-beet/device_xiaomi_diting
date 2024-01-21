@@ -27,7 +27,7 @@
         <!-- CPU_LLCC_BW_MIN_FREQ_V2 resource opcode, value-->
         <!-- POWER COLLAPSE resource opcode, value-->
         <!-- STORAGE CLK SCALING resource opcode, value-->
-        <!-- LLCC DDR LAT GOLD MIN FREQ resource opcode, value-->
+        <!-- LLCC DDR LAT CPU0 MIN FREQ resource opcode, value-->
         <!-- L3_MEMLAT_MIN_FREQ_PRIME resource opcode, value-->
         <!-- GPU DISABLE resource opcode, value-->
 
@@ -36,7 +36,7 @@
             Id="0x00001081" Type="1" Enable="true" Timeout="2000" Target="taro,cape,ukee"
             Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF,
                        0x40800000, 0xA59, 0x40800100, 0xFFF, 0x40800200, 0xFFF, 0x41848000, 0x104410,
-                       0x41844000, 0x104410, 0x40400000, 0x1, 0x42C10000, 0x1, 0x43488000, 0x30D400,
+                       0x41844000, 0x104410, 0x40400000, 0x1, 0x42C10000, 0x1, 0x43460000, 0x30D400,
                        0x43458000, 0x193138, 0x4281C000, 2000, 0x5FC00000, 0" />
         <!-- Type="1", main launch of 2sec -->
         <Config
@@ -811,11 +811,11 @@
             Resources="0x40CAC000, 20, 0x40CA4000, 2, 0x40800000, 1555, 0x40800100, 800, 0x40800200, 1670,
                        0x40C74000, 0xFF, 0x40408000, 0x63, 0x42C1C000, 1, 0x40CFC000, 0" />
 
-        <!-- LPM_SLEEP_DISABLED resource opcode, value-->
         <Config
             Id="0x00001091" Enable="true" Target="cape,ukee"
             Resources="0x40CAC000, 20, 0x40CA4000, 2, 0x40800000, 1555, 0x40800100, 800, 0x40800200, 1651,
-                       0x40C74000, 0xFF, 0x40408000, 0x63, 0x42C1C000, 1, 0x40CFC000, 0, 0x40414000, 1" />
+                       0x40C74000, 0xFF, 0x40408000, 0x63, 0x42C1C000, 1, 0x40CFC000, 0" />
+
 
     <!--Display on Resource -->
         <!-- Display on resource opcode, value -->
@@ -1028,7 +1028,8 @@
                            0x40C7C000, 0, 0x40800100, 806, 0x40C90000, 0x70"/>
 
     <!-- PiCard Early Wakeup both GPU and Display -->
-        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
+        <!-- 60, 90fps: CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
+        <!-- 120fps & above: PID Affine opcode, value -->
         <!-- GPU DISABLE resource opcode, value-->
         <!-- DISPLAY EARLY WAKEUP opcode, value-->
         <Config
@@ -1039,19 +1040,19 @@
                 Resources="0x40800100, 700, 0x4281C000, 17, 0x41C0C000, 0" />
         <Config
                 Id="0x00001098" Type="0" Enable="true" Target="taro,cape,ukee" Timeout="2000" Fps="120"
-                Resources="0x40800100, 700, 0x4281C000, 13, 0x41C0C000, 0" />
+                Resources="0x42C20000, 1, 0x4281C000, 13, 0x41C0C000, 0" />
         <Config
                 Id="0x00001098" Type="0" Enable="true" Target="taro,cape,ukee" Timeout="2000" Fps="144"
-                Resources="0x40800100, 700, 0x4281C000, 11, 0x41C0C000, 0" />
+                Resources="0x42C20000, 1, 0x4281C000, 11, 0x41C0C000, 0" />
         <Config
                 Id="0x00001098" Type="0" Enable="true" Target="cape" Timeout="2000" Fps="165"
-                Resources="0x40800100, 700, 0x4281C000, 11, 0x41C0C000, 0" />
+                Resources="0x42C20000, 1, 0x4281C000, 11, 0x41C0C000, 0" />
         <Config
                 Id="0x00001098" Type="0" Enable="true" Target="taro,cape,ukee" Timeout="2000" Fps="180"
-                Resources="0x40800100, 700, 0x4281C000, 9, 0x41C0C000, 0" />
+                Resources="0x42C20000, 1, 0x4281C000, 9, 0x41C0C000, 0" />
         <Config
                 Id="0x00001098" Type="0" Enable="true" Target="taro,cape,ukee" Timeout="2000" Fps="240"
-                Resources="0x40800100, 700, 0x4281C000, 7, 0x41C0C000, 0" />
+                Resources="0x42C20000, 1, 0x4281C000, 7, 0x41C0C000, 0" />
 
         <!-- GPU_IDLE_TIMER resource opcode, value-->
         <!-- DISPLAY EARLY WAKEUP opcode, value-->
@@ -1060,7 +1061,8 @@
                 Resources="0x4282C000, 32, 0x41C0C000, 0" />
 
     <!-- PiCard Early Wakeup GPU only -->
-        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
+        <!-- 60, 90fps: CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
+        <!-- 120fps & above: PID Affine opcode, value -->
         <!-- GPU DISABLE resource opcode, value-->
         <Config
                 Id="0x00001099" Type="0" Enable="true" Target="taro,cape,ukee" Timeout="2000" Fps="60"
@@ -1070,19 +1072,19 @@
                 Resources="0x40800100, 700, 0x4281C000, 17" />
         <Config
                 Id="0x00001099" Type="0" Enable="true" Target="taro,cape,ukee" Timeout="2000" Fps="120"
-                Resources="0x40800100, 700, 0x4281C000, 13" />
+                Resources="0x42C20000, 1, 0x4281C000, 13" />
         <Config
                 Id="0x00001099" Type="0" Enable="true" Target="taro,cape,ukee" Timeout="2000" Fps="144"
-                Resources="0x40800100, 700, 0x4281C000, 11" />
+                Resources="0x42C20000, 1, 0x4281C000, 11" />
         <Config
                 Id="0x00001099" Type="0" Enable="true" Target="cape" Timeout="2000" Fps="165"
-                Resources="0x40800100, 700, 0x4281C000, 11" />
+                Resources="0x42C20000, 1, 0x4281C000, 11" />
         <Config
                 Id="0x00001099" Type="0" Enable="true" Target="taro,cape,ukee" Timeout="2000" Fps="180"
-                Resources="0x40800100, 700, 0x4281C000, 9" />
+                Resources="0x42C20000, 1, 0x4281C000, 9" />
         <Config
                 Id="0x00001099" Type="0" Enable="true" Target="taro,cape,ukee" Timeout="2000" Fps="240"
-                Resources="0x40800100, 700, 0x4281C000, 7" />
+                Resources="0x42C20000, 1, 0x4281C000, 7" />
 
         <!-- GPU_IDLE_TIMER resource opcode, value-->
         <Config
@@ -1090,7 +1092,8 @@
                 Resources="0x4282C000, 32" />
 
     <!-- PiCard Early Wakeup Display only -->
-        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
+        <!-- 60, 90fps: CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
+        <!-- 120fps & above: PID Affine opcode, value -->
         <!-- DISPLAY EARLY WAKEUP opcode, value-->
         <Config
                 Id="0x0000109A" Type="0" Enable="true" Target="taro,cape,ukee" Timeout="2000" Fps="60"
@@ -1100,19 +1103,19 @@
                 Resources="0x40800100, 700, 0x41C0C000, 0" />
         <Config
                 Id="0x0000109A" Type="0" Enable="true" Target="taro,cape,ukee" Timeout="2000" Fps="120"
-                Resources="0x40800100, 700, 0x41C0C000, 0" />
+                Resources="0x42C20000, 1, 0x41C0C000, 0" />
         <Config
                 Id="0x0000109A" Type="0" Enable="true" Target="taro,cape,ukee" Timeout="2000" Fps="144"
-                Resources="0x40800100, 700, 0x41C0C000, 0" />
+                Resources="0x42C20000, 1, 0x41C0C000, 0" />
         <Config
                 Id="0x0000109A" Type="0" Enable="true" Target="cape" Timeout="2000" Fps="165"
-                Resources="0x40800100, 700, 0x41C0C000, 0" />
+                Resources="0x42C20000, 1, 0x41C0C000, 0" />
         <Config
                 Id="0x0000109A" Type="0" Enable="true" Target="taro,cape,ukee" Timeout="2000" Fps="180"
-                Resources="0x40800100, 700, 0x41C0C000, 0" />
+                Resources="0x42C20000, 1, 0x41C0C000, 0" />
         <Config
                 Id="0x0000109A" Type="0" Enable="true" Target="taro,cape,ukee" Timeout="2000" Fps="240"
-                Resources="0x40800100, 700, 0x41C0C000, 0" />
+                Resources="0x42C20000, 1, 0x41C0C000, 0" />
 
         <!-- DISPLAY EARLY WAKEUP opcode, value-->
         <Config
@@ -1122,32 +1125,33 @@
     <!--Large Comp Hint -->
         <!-- CPU min freq resource opcode, value -->
         <!-- GPU MIN_FREQUENCY resource opcode,value -->
+        <!-- PID Affine opcode,value -->
         <Config
                 Id="0x00001097" Type="0" Enable="true" Timeout="5000" Target="taro,cape,ukee" Fps="120"
-                Resources="0x40800000, 1500, 0x42804000, 0" />
+                Resources="0x40800000, 1500, 0x42804000, 0, 0x42C20000, 1" />
 
         <Config
                 Id="0x00001097" Type="0" Enable="true" Timeout="5000" Target="taro,cape,ukee" Fps="144"
-                Resources="0x40800000, 1500, 0x42804000, 0" />
-
+                Resources="0x40800000, 1500, 0x42804000, 0, 0x42C20000, 1" />
         <Config
                 Id="0x00001097" Type="0" Enable="true" Timeout="5000" Target="cape" Fps="165"
-                Resources="0x40800000, 1500, 0x42804000, 0" />
+                Resources="0x40800000, 1500, 0x42804000, 0, 0x42C20000, 1" />
 
         <Config
                 Id="0x00001097" Type="0" Enable="true" Timeout="5000" Target="taro,cape,ukee" Fps="180"
-                Resources="0x40800000, 1500, 0x42804000, 0" />
+                Resources="0x40800000, 1500, 0x42804000, 0, 0x42C20000, 1" />
 
         <Config
                 Id="0x00001097" Type="0" Enable="true" Timeout="5000" Target="taro,cape,ukee" Fps="240"
-                Resources="0x40800000, 1500, 0x42804000, 0" />
+                Resources="0x40800000, 1500, 0x42804000, 0, 0x42C20000, 1" />
 
     <!--Large Comp Hint -->
         <!-- CPU min freq resource opcode, value -->
         <!-- GPU MIN_FREQUENCY resource opcode,value -->
+        <!-- PID Affine opcode,value -->
         <Config
                 Id="0x00001097" Type="0" Enable="true" Timeout="5000" Target="diwali" Fps="144"
-                Resources="0x40800000, 1500, 0x42804000, 0" />
+                Resources="0x40800000, 1500, 0x42804000, 0, 0x42C20000, 1" />
 
     <!--XiaoMi bluetooth boost-->
         <!-- SCHEDBOOST resource opcode, value-->
