@@ -47,10 +47,6 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
 ODM_MANIFEST_SKUS += diting
 ODM_MANIFEST_MARBLE_FILES := $(DEVICE_PATH)/configs/hidl/manifest_nfc.xml
 
-# Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_diting
-TARGET_RECOVERY_DEVICE_MODULES := libinit_diting
-
 # Kernel
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
