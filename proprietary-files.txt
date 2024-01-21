@@ -100,7 +100,6 @@ vendor/lib64/soundfx/libqcomvisualizer.so
 vendor/lib64/soundfx/libqcomvoiceprocessing.so
 vendor/lib64/soundfx/libshoebox.so
 vendor/lib64/soundfx/libvolumelistener.so
-vendor/lib64/lib_misound_asc.so
 vendor/lib64/libadm.so
 vendor/lib64/libagm.so
 vendor/lib64/libagm_compress_plugin.so
@@ -113,7 +112,6 @@ vendor/lib64/libar-gpr.so
 vendor/lib64/libar-gsl.so
 vendor/lib64/libar-pal.so
 vendor/lib64/libats.so
-vendor/lib64/libawcal.so
 vendor/lib64/libbatterylistener.so
 vendor/lib64/libfmpal.so
 vendor/lib64/libkaraokepal.so
@@ -378,8 +376,6 @@ vendor/lib64/com.qualcomm.mcx.policy.mfl.so
 vendor/lib64/com.qualcomm.mcx.policy.xr.so
 vendor/lib64/com.qualcomm.qti.mcx.usecase.extension.so
 vendor/lib64/libAF.so
-vendor/lib64/libMiDispDevManager.so
-vendor/lib64/libMiMotion.so
 vendor/lib64/libMiMotion.so
 vendor/lib64/libPlatformValidatorShared.so
 vendor/lib64/libQnnHtpAltPrepV69Stub.so
@@ -443,7 +439,6 @@ vendor/lib64/libcom.xiaomi.pluginutils.so
 vendor/lib64/libdeflicker.so
 vendor/lib64/libhdr10plus.so
 vendor/lib64/libhta.so
-vendor/lib64/libhta_hexagon_runtime_snpe.so
 vendor/lib64/libipebpsstriping.so
 vendor/lib64/libipebpsstriping170.so
 vendor/lib64/libipebpsstriping480.so
@@ -451,11 +446,6 @@ vendor/lib64/libjpege.so
 vendor/lib64/libmctfengine_stub.so
 vendor/lib64/libmemunreachable.so
 vendor/lib64/libmfGhostDetection.so
-vendor/lib64/libmi-stc-HW-modulate.so
-vendor/lib64/libmiBrightness.so
-vendor/lib64/libmiSensorCtrl.so
-vendor/lib64/libmiStereoFactoryRemapBasicLib.so
-vendor/lib64/libmi_dspp.so
 vendor/lib64/libmi_supernight_raw_checker.so
 vendor/lib64/libmiai_deblur.so
 vendor/lib64/libmiai_portraitsupernight.so
@@ -1213,7 +1203,6 @@ vendor/lib64/libtestutils.so
 vendor/lib64/libtinyxml2_1.so
 
 # Displayfeature
-odm/lib64/libhdrmode.so
 vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
 vendor/bin/displayfeature
 vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc
@@ -1461,12 +1450,6 @@ vendor/firmware/a730_zap.mbn
 vendor/firmware/a730_zap.mdt
 vendor/firmware/gmu_gen70000.bin
 
-# Hotword enrollment
-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND.apk
-product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk
-system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
-system_ext/framework/com.android.hotwordenrollment.common.util.jar
-
 # IR
 vendor/lib64/hw/consumerir.qcom.so
 
@@ -1489,7 +1472,7 @@ vendor/lib64/libspcom.so
 # Keymint
 vendor/bin/hw/android.hardware.security.keymint-service-qti
 vendor/etc/init/android.hardware.security.keymint-service-qti.rc
-vendor/etc/vintf/manifest/android.hardware.security.keymint-service-qti-rkp.xml
+vendor/etc/vintf/manifest/android.hardware.security.keymint-service-qti.xml
 vendor/lib64/libqtikeymint.so
 
 # Limits
@@ -1538,7 +1521,7 @@ vendor/lib64/libvpplibrary.so
 vendor/lib64/vendor.qti.hardware.vpp@2.0.so
 
 # Media (Dolby)
-vendor/bin/hw/dolbycodec2|3be3be9e6e7e5a2190238d5ac1116cce63bea781
+vendor/bin/hw/dolbycodec2|10ddf8bc38a85054eb2b352823e7befe754ea2ff
 vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service
 vendor/etc/dolby/dax-default.xml
 vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc:vendor/etc/init/dolbycodec2.rc
@@ -1560,7 +1543,7 @@ vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so
 vendor/lib64/vendor.dolby.hardware.dms@2.0.so
 
 # Media (Dolby Audio) - from nuwa MIUI V14.0.2.0.UMBMIXM
-vendor/bin/hw/vendor.dolby.media.c2@1.0-service|f4bcd0776be21da47cd1e0cccf838d841d1c7914
+vendor/bin/hw/vendor.dolby.media.c2@1.0-service|e928be12e2221da78c4dc8ae3a72d78c56af605d
 vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc|bc1e134139c7dd0e5b4f98952aa51c629ea66dc7
 vendor/lib64/soundfx/libdlbvol.so|8ef979e2d0768fd1f1cc1b88b2c6c5e03d57600c
 vendor/lib64/soundfx/libhwdap.so|9d9d434864d5d5445e9def4871dd11d4d262186e
