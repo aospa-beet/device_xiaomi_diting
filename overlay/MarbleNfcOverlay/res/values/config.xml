@@ -18,7 +18,7 @@
 
     <!-- List of SKUs where Secure NFC functionality is supported -->
     <string-array name="config_skuSupportsSecureNfc">
-        <item>marble</item>
+        <item>diting</item>
     </string-array>
 
 </resources>

@@ -1,33 +1,33 @@
-# Device Tree for POCO F5 / Redmi Note 12 Turbo
+# Device Tree for Xiaomi 12T Pro / Redmi K50 Ultra
 
-The POCO F5 (codenamed "marble") is an upper-mid-range smartphone from Xiaomi. It was announced and released in May 2023.
+The Xiaomi 12T Pro (codenamed "diting") is a flagship smartphone from Xiaomi. It was announced and released in October 2022.
 
-It was originally released in China as Redmi Note 12 Turbo, in March 2023.
+It was originally released in China as Redmi K50 Ultra, in August 2022.
 
 ## Device specifications
 
 | Feature     | Specification
 | :-----------|:-------------
-| Chipset     | Qualcomm SM7475-AB Snapdragon 7+ Gen 2 (4 nm)
-| CPU         | Octa-core (1x2.92 GHz Cortex-X2 & 3x2.5 GHz Cortex-A710 & 4x1.8 GHz Cortex-A510)
-| GPU         | Adreno 725 (580 MHz)
+| Chipset     | Qualcomm SM8475 Snapdragon 8+ Gen 1 (4 nm)
+| CPU         | Octa-core (1x3.19 GHz Cortex-X2 & 3x2.75 GHz Cortex-A710 & 4x1.80 GHz Cortex-A510)
+| GPU         | Adreno 730 (900 MHz)
 | Memory      | 8/12 GB LPDDR5 RAM
 | Storage     | 256 GB (UFS 3.1)
-| SIM         | Dual SIM (Nano-SIM, dual stand-by)
-| Battery     | 5000 mAh Li-Po (non-removable), 67W fast charge
+| SIM         | Nano-SIM and eSIM or Dual SIM (Nano-SIM, dual stand-by)
+| Battery     | 5000 mAh Li-Po (non-removable), 120W fast charge
 | Shipped OS  | Android 13.0 (MIUI 14)
-| Dimensions  | 161.1 x 75 x 7.9 mm (6.34 x 2.95 x 0.31 in)
-| Display     | 6.67", 1080x2400 pixels, AMOLED, 120Hz, 12 bit, Dolby Vision, HDR10+
-| Camera      | 64 MP (main), 8 MP (ultrawide), 2 MP (macro), 16 MP (front)
-| Comms       | GSM/HSPA/LTE/5G, Wi-Fi 802.11 a/b/g/n/ac/ax, Bluetooth 5.3, NFC (non-IN)
-| Sensors     | Fingerprint (side-mounted), accelerometer, gyro, compass, proximity, light
+| Dimensions  | 163.1 x 75.9 x 8.6 mm (6.42 x 2.99 x 0.34 in)
+| Display     | 6.67", 1220x2712 pixels, AMOLED, 120Hz, 10 bit, Dolby Vision, HDR10+
+| Camera      | 200 MP (main), 8 MP (ultrawide), 2 MP (macro), 20 MP (front)
+| Comms       | GSM/HSPA/LTE/5G, Wi-Fi 802.11 a/b/g/n/ac/6, Bluetooth 5.2, NFC
+| Sensors     | Fingerprint (under display, optical), accelerometer, gyro, compass, proximity, light, color spectrum
 
 ## Device picture
 
-![POCO F5](https://i02.appmifile.com/173_operator_sg/20/04/2023/27b9038f6166371bea81e9b5aad9a66a.png)
+![Xiaomi 12T Pro](https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-12t-pro-01.jpg)
 
 ```
-Copyright (C) 2023 Paranoid Android
+Copyright (C) 2024 Paranoid Android
 
 SPDX-License-Identifier: Apache-2.0
 ```

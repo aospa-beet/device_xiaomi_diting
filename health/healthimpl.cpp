@@ -27,7 +27,7 @@
  * IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#define LOG_TAG "android.hardware.health@2.1-service.marble"
+#define LOG_TAG "android.hardware.health@2.1-service.diting"
 
 #include <android-base/logging.h>
 #include <health/utils.h>

@@ -1,6 +1,6 @@
 cc_library_shared {
-    name: "android.hardware.health@2.1-impl-marble",
-    stem: "android.hardware.health@2.0-impl-2.1-marble",
+    name: "android.hardware.health@2.1-impl-diting",
+    stem: "android.hardware.health@2.0-impl-2.1-diting",
     vendor: true,
     recovery_available: true,
 

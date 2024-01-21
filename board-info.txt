@@ -1,1 +1,1 @@
-require board=marble|marblein
+require board=diting|ditingp
