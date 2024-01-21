@@ -98,8 +98,8 @@ service qti_esepowermanager_service_1_1 /vendor/bin/hw/vendor.qti.esepowermanage
     override
     disabled
 
-# Do not enable NFC on marblein
-on property:ro.boot.product.hardware.sku=marble
+# Do not enable NFC on ditingin
+on property:ro.boot.product.hardware.sku=diting
     enable nqnfc_2_0_hal_service
     enable secureelement-hal_1_2
     enable qti_esepowermanager_service_1_1

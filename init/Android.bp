@@ -5,8 +5,8 @@
 //
 
 cc_library_static {
-    name: "libinit_marble",
-    srcs: ["init_marble.cpp"],
+    name: "libinit_diting",
+    srcs: ["init_diting.cpp"],
     recovery_available: true,
     whole_static_libs: ["libbase"],
     include_dirs: [

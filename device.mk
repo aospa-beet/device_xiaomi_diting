@@ -100,7 +100,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.miui.notch=1 \
-    ro.product.mod_device=marble_global
+    ro.product.mod_device=diting_global
 
 PRODUCT_VENDOR_PROPERTIES += \
     camera.disable_zsl_mode=1 \
@@ -191,7 +191,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
 # Firmware
-$(call inherit-product-if-exists, vendor/xiaomi/firmware/marble/config.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/firmware/diting/config.mk)
 
 # FRP
 PRODUCT_VENDOR_PROPERTIES += \
@@ -226,10 +226,10 @@ PRODUCT_VENDOR_PROPERTIES += \
 # Init scripts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/bin/init.kernel.post_boot.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.kernel.post_boot.sh \
-    $(LOCAL_PATH)/rootdir/etc/init.marble.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.marble.rc \
-    $(LOCAL_PATH)/rootdir/etc/init.marble.perf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.marble.perf.rc \
+    $(LOCAL_PATH)/rootdir/etc/init.diting.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.diting.rc \
+    $(LOCAL_PATH)/rootdir/etc/init.diting.perf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.diting.perf.rc \
     $(LOCAL_PATH)/rootdir/etc/init.target.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.target.rc \
-    $(LOCAL_PATH)/rootdir/etc/ueventd.marble.rc:$(TARGET_COPY_OUT_ODM)/etc/ueventd.rc
+    $(LOCAL_PATH)/rootdir/etc/ueventd.diting.rc:$(TARGET_COPY_OUT_ODM)/etc/ueventd.rc
 
 # IR
 PRODUCT_PACKAGES += \
@@ -285,7 +285,7 @@ PRODUCT_COPY_FILES += \
 NEED_AIDL_NDK_PLATFORM_BACKEND := true
 
 # NFC
-TARGET_NFC_SKU := marble
+TARGET_NFC_SKU := diting
 
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -307,9 +307,6 @@ PRODUCT_PACKAGES += \
     MarbleGLSettingsOverlay \
     MarbleGLSettingsProviderOverlay \
     MarbleGLWifiOverlay \
-    MarbleINSettingsOverlay \
-    MarbleINSettingsProviderOverlay \
-    MarbleINWifiOverlay \
     MarbleNfcOverlay \
     MarbleSettingsOverlay \
     MarbleSystemUIOverlay \
@@ -413,7 +410,7 @@ PRODUCT_COPY_FILES += \
     prebuilts/vndk/v33/arm64/arch-arm64-armv8-a/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_foundation-v33.so
 
 # Vendor blobs
-$(call inherit-product, vendor/xiaomi/marble/marble-vendor.mk)
+$(call inherit-product, vendor/xiaomi/diting/diting-vendor.mk)
 
 # Verified Boot
 PRODUCT_COPY_FILES += \

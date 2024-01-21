@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/marble
+DEVICE_PATH := device/xiaomi/diting
 
 # Architecture
 TARGET_ARCH := arm64
@@ -31,7 +31,7 @@ AB_OTA_PARTITIONS += \
 
 # Bootloader
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
-TARGET_BOOTLOADER_BOARD_NAME := marble
+TARGET_BOOTLOADER_BOARD_NAME := diting
 
 # Build
 BUILD_BROKEN_DUP_RULES := true
@@ -44,12 +44,12 @@ TARGET_TAP_TO_WAKE_NODE  := "/sys/devices/platform/goodix_ts.0/goodix_ts_double_
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/configs/hidl/device_framework_compatibility_matrix.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
-ODM_MANIFEST_SKUS += marble
+ODM_MANIFEST_SKUS += diting
 ODM_MANIFEST_MARBLE_FILES := $(DEVICE_PATH)/configs/hidl/manifest_nfc.xml
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_marble
-TARGET_RECOVERY_DEVICE_MODULES := libinit_marble
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_diting
+TARGET_RECOVERY_DEVICE_MODULES := libinit_diting
 
 # Kernel
 BOARD_KERNEL_PAGESIZE := 4096
@@ -72,7 +72,7 @@ BOARD_BOOTCONFIG := \
     androidboot.usbcontroller=a600000.dwc3
 
 # OTA
-TARGET_OTA_ASSERT_DEVICE := marble,marblein
+TARGET_OTA_ASSERT_DEVICE := diting,ditingp
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
