@@ -19,6 +19,7 @@
     <!-- List of SKUs where Secure NFC functionality is supported -->
     <string-array name="config_skuSupportsSecureNfc">
         <item>diting</item>
+        <item>ditingp</item>
     </string-array>
 
 </resources>
