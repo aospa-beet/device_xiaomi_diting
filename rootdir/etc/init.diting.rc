@@ -77,33 +77,6 @@ service qrtr-lookup /vendor/bin/qrtr-lookup
 on property:sys.boot_completed=1
     start qrtr-lookup
 
-service nqnfc_2_0_hal_service /vendor/bin/hw/vendor.nxp.hardware.nfc@2.0-service
-    class early_hal
-    user nfc
-    group nfc
-    override
-    disabled
-
-service secureelement-hal_1_2 /vendor/bin/hw/vendor.qti.secure_element@1.2-service
-    class early_hal
-    user system
-    group system
-    override
-    disabled
-
-service qti_esepowermanager_service_1_1 /vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
-    class early_hal
-    user system
-    group nfc system
-    override
-    disabled
-
-# Do not enable NFC on ditingin
-on property:ro.boot.product.hardware.sku=diting
-    enable nqnfc_2_0_hal_service
-    enable secureelement-hal_1_2
-    enable qti_esepowermanager_service_1_1
-
 service citsensor-hal-2-0 /vendor/bin/hw/vendor.xiaomi.sensor.citsensorservice@2.0-service
     class late_start
     user system
