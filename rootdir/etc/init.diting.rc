@@ -17,12 +17,14 @@ on boot
     mkdir /data/vendor/modem 0777 radio radio
 
     # Touchscreen
-    chown system system /sys/devices/platform/goodix_ts.0/goodix_ts_double_tap
-    chmod 0660 /sys/devices/platform/goodix_ts.0/goodix_ts_double_tap
     chown system system /sys/devices/platform/goodix_ts.0/goodix_ts_report_rate
     chmod 0660 /sys/devices/platform/goodix_ts.0/goodix_ts_report_rate
     chown system system /sys/class/touch/touch_dev/palm_sensor
     chmod 0664 /sys/class/touch/touch_dev/palm_sensor
+
+    # DT2W
+    chown system system /dev/xiaomi-touch
+    chmod 0660 /dev/xiaomi-touch
 
     # Fingerprint
     chmod 0666 /dev/goodix_fp
