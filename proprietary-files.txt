@@ -1522,28 +1522,27 @@ vendor/lib64/libvppimmotion.so
 vendor/lib64/libvpplibrary.so
 vendor/lib64/vendor.qti.hardware.vpp@2.0.so
 
-# Media (Dolby)
-vendor/bin/hw/dolbycodec2|10ddf8bc38a85054eb2b352823e7befe754ea2ff
-vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service
-vendor/etc/dolby/dax-default.xml
-vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc:vendor/etc/init/dolbycodec2.rc
-vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc
-vendor/etc/vintf/manifest/manifest_vendor.dolby.hardware.dms.xml
-vendor/etc/dolby_vision.cfg
-vendor/etc/media_codecs_with_dolby_taro.xml
-vendor/lib64/c2.dolby.avc.dec.so
-vendor/lib64/c2.dolby.avc.sec.dec.so
-vendor/lib64/c2.dolby.client.so
-vendor/lib64/c2.dolby.egl.so
-vendor/lib64/c2.dolby.hevc.dec.so
-vendor/lib64/c2.dolby.hevc.enc.so
-vendor/lib64/c2.dolby.hevc.sec.dec.so
-vendor/lib64/c2.dolby.store.so
-vendor/lib64/libdlbdsservice.so
-vendor/lib64/libdolbyottcameracontrol.so
-vendor/lib64/libdolbyvision.so
-vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so
-vendor/lib64/vendor.dolby.hardware.dms@2.0.so
+# Media (Dolby) - from diting MIUI V14.0.5.0.TLFMIXM
+vendor/bin/hw/dolbycodec2|2237782d1028029141713c4d6a03387e2876d9c2
+vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service|cfac5a7581e9a7c39ee2246545dd7cae7ae10579
+vendor/etc/dolby/dax-default.xml|6081c6470f337f900e01526e0ea5150910c04f90
+vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc:vendor/etc/init/dolbycodec2.rc|1ea8b363e94fd4f5410cadceb30de8229fb38045
+vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc|29296ebfe89b2697fec573be73cc3757fd97bed6
+vendor/etc/vintf/manifest/manifest_vendor.dolby.hardware.dms.xml|c8095f649de19b80271fb429b4b6b439297a0678
+vendor/etc/dolby_vision.cfg|2b54d3cbbb77bd9db4a8f0aeaf967b1be70bfa2a
+vendor/etc/media_codecs_with_dolby_taro.xml|13696738db61eea9937158d69dae316092efe458
+vendor/lib64/c2.dolby.avc.enc.so|8c15639fdb91183374a09f761bb8ed0bd032abb8
+vendor/lib64/c2.dolby.client.so|693a506607d2db2c9601a7377793bb819a7a6379
+vendor/lib64/c2.dolby.decoder.secure.so|f9df1c87dfe665745e5431dab91042da43913e75
+vendor/lib64/c2.dolby.decoder.so|1827dd8f7f7aac232548033599bee3e1e577c27e
+vendor/lib64/c2.dolby.egl.so|1be92997a80d2cec80f96eb8512e60d8643e2117
+vendor/lib64/c2.dolby.hevc.enc.so|87ed99041e167d0df998ce29a53cd41835ebe4e6
+vendor/lib64/c2.dolby.store.so|d663c3065a2d4be85e7d06645f6ddb3fe8c4361d
+vendor/lib64/libdlbdsservice.so|99528293d7578a65b7a413136b9206dce69ece68
+vendor/lib64/libdolbyottcameracontrol.so|a4692d4f6efba4e118542fda6343830af8818b36
+vendor/lib64/libdolbyvision.so|947778c79fe6bf424c11b6eaa59eff583561ee47
+vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so|8ae78b3f5a952dd91f1fc257c4047f2dec6d7452
+vendor/lib64/vendor.dolby.hardware.dms@2.0.so|975fee7ab5d90b6e66984d9f67f198c3a4ea358f
 
 # Media (Dolby Audio) - from nuwa MIUI V14.0.2.0.UMBMIXM
 vendor/bin/hw/vendor.dolby.media.c2@1.0-service|e928be12e2221da78c4dc8ae3a72d78c56af605d
