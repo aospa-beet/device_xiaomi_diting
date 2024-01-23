@@ -1,4 +1,4 @@
-# Device proprietary files - from diting HyperOS V816.0.2.0.ULFCNXM package, unless pinned
+# Device proprietary files - from diting HyperOS V816.0.1.0.ULFEUXM package, unless pinned
 
 # ADSP
 vendor/bin/adsprpcd
@@ -466,12 +466,8 @@ vendor/lib64/libmialgo_video_seg_depth.so
 vendor/lib64/libmialgoengine.so
 vendor/lib64/libmibokeh_845_video.so
 vendor/lib64/libmibokeh_855.so
-vendor/lib64/libmicuttlefish_fs.so
-vendor/lib64/libmicuttlefish_utils.so
-vendor/lib64/libmiface.so
 vendor/lib64/libmiphone_preview_bokeh.so
 vendor/lib64/libmiphone_preview_depth.so
-vendor/lib64/libmiriskmanager.so
 vendor/lib64/libmis_plugin_dummy.so
 vendor/lib64/libmis_plugin_his.so
 vendor/lib64/libmis_plugin_morpho.so
@@ -1131,15 +1127,18 @@ vendor/lib64/camera/com.qti.sensor.diting_sunny_imx596_front.so
 vendor/lib64/camera/com.qti.sensor.diting_sunny_s5k4h7_ultra.so
 vendor/lib64/camera/com.qti.sensor.diting_sunny_s5khm6_wide.so
 vendor/lib64/camera/com.qti.sensormodule.diting_ofilm_gc02m1_macro.bin
+vendor/lib64/camera/com.qti.sensormodule.diting_semco_s5khp1_wide.bin
 vendor/lib64/camera/com.qti.sensormodule.diting_sunny_imx596_front.bin
 vendor/lib64/camera/com.qti.sensormodule.diting_sunny_s5k4h7_ultra.bin
-vendor/lib64/camera/com.qti.sensormodule.diting_sunny_s5khm6_wide.bin
 vendor/lib64/camera/com.qti.tuned.default.bin
 vendor/lib64/camera/com.qti.tuned.diting_ofilm_gc02m1_macro.bin
 vendor/lib64/camera/com.qti.tuned.diting_semco_s5khp1_wide.bin
 vendor/lib64/camera/com.qti.tuned.diting_sunny_imx596_front.bin
 vendor/lib64/camera/com.qti.tuned.diting_sunny_s5k4h7_ultra.bin
 vendor/lib64/camera/com.qti.tuned.diting_sunny_s5khm6_wide.bin
+
+# Camera sensors (CN) - from HyperOS V816.0.2.0.ULFCNXM
+vendor/lib64/camera/com.qti.sensormodule.diting_sunny_s5khm6_wide.bin|83132d46c26cbd520005539693f2e8f7095f7409
 
 # Certificate Authority
 vendor/app/CACertService/CACertService.apk
@@ -1447,6 +1446,12 @@ vendor/firmware/a730_zap.mbn
 vendor/firmware/a730_zap.mdt
 vendor/firmware/gmu_gen70000.bin
 
+# Hotword enrollment
+product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND.apk
+product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk
+system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
+system_ext/framework/com.android.hotwordenrollment.common.util.jar
+
 # IR
 vendor/lib64/hw/consumerir.qcom.so
 
@@ -1525,6 +1530,7 @@ vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc:vendor/etc/init/dolbycodec2
 vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc
 vendor/etc/vintf/manifest/manifest_vendor.dolby.hardware.dms.xml
 vendor/etc/dolby_vision.cfg
+vendor/etc/media_codecs_with_dolby_taro.xml
 vendor/lib64/c2.dolby.avc.dec.so
 vendor/lib64/c2.dolby.avc.sec.dec.so
 vendor/lib64/c2.dolby.client.so
@@ -2004,7 +2010,6 @@ vendor/etc/thermal-region-map.conf
 vendor/etc/thermal-tgame.conf
 vendor/etc/thermal-video.conf
 vendor/etc/thermal-videochat.conf
-vendor/etc/thermal-yuanshen.conf
 vendor/etc/thermald-devices.conf
 vendor/lib64/libthermalclient.so
 
