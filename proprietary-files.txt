@@ -386,13 +386,21 @@ vendor/lib64/libSnpeHtpV69Stub.so
 vendor/lib64/libTrueSight.so
 vendor/lib64/libXMFaceFocus.so
 vendor/lib64/libaidenoiser.so
+vendor/lib64/libalAILDC.so
+vendor/lib64/libalAI_Seg.so
 vendor/lib64/libalCFR.so
 vendor/lib64/libalLDC.so
+vendor/lib64/libalNN.so
+vendor/lib64/libalNN_engine.so
+vendor/lib64/libalNN_gpu.so
+vendor/lib64/libalNN_snpe.so
 vendor/lib64/libalhLDC.so
 vendor/lib64/libanc_dc_base.so
 vendor/lib64/libanc_hdr.so
 vendor/lib64/libanc_supervq.so
 vendor/lib64/libancbase.so
+vendor/lib64/libarc_sat.so
+vendor/lib64/libarc_translate.so
 vendor/lib64/libarcsoft_beautyshot.so
 vendor/lib64/libarcsoft_dualcam_refocus_image.so
 vendor/lib64/libarcsoft_dualcam_refocus_video.so
@@ -437,6 +445,8 @@ vendor/lib64/libcom.xiaomi.mawutils.so
 vendor/lib64/libcom.xiaomi.metadatautils.so
 vendor/lib64/libcom.xiaomi.pluginutils.so
 vendor/lib64/libdeflicker.so
+vendor/lib64/libdualcam_optical_zoom_control.so
+vendor/lib64/libdualcam_video_optical_zoom.so
 vendor/lib64/libhdr10plus.so
 vendor/lib64/libhta.so
 vendor/lib64/libipebpsstriping.so
@@ -490,6 +500,7 @@ vendor/lib64/libos.so
 vendor/lib64/libqll.so
 vendor/lib64/libqll10.so
 vendor/lib64/libqllengine.so
+vendor/lib64/libqnnwrapper.so
 vendor/lib64/libqshcamera.so
 vendor/lib64/libquickcamera.so
 vendor/lib64/librelight_only.so
@@ -503,6 +514,8 @@ vendor/lib64/libswregistrationalgo.so
 vendor/lib64/libsynx.so
 vendor/lib64/libtfestriping.so
 vendor/lib64/libthreadutils.so
+vendor/lib64/libtriplecam_optical_zoom_control.so
+vendor/lib64/libtriplecam_video_optical_zoom.so
 vendor/lib64/libubifocus.so
 vendor/lib64/libvideoBokeh.so
 vendor/lib64/libvideofilter_only.so
@@ -513,6 +526,7 @@ vendor/lib64/libvidhance_horizon_correction.so
 vendor/lib64/libvidhance_ldc.so
 vendor/lib64/libvidhance_stabilizer.so
 vendor/lib64/libvidhance_super_stabilization.so
+vendor/lib64/libwa_opticalzoom_fusion.so
 vendor/lib64/libxmi_hdr_checker.so
 vendor/lib64/libxmi_high_dynamic_range.so
 vendor/lib64/libxmi_slow_motion_mein.so
