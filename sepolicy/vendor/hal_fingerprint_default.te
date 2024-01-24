@@ -6,6 +6,7 @@ allow hal_fingerprint_default {
   tee_device
   uhid_device
   vendor_fingerprint_device
+  vendor_touchfeature_device
   vendor_dmabuf_qseecom_heap_device
   vendor_dmabuf_qseecom_ta_heap_device
 }: chr_file rw_file_perms;
@@ -28,6 +29,10 @@ allow hal_fingerprint_default self:capability sys_nice;
 allow hal_fingerprint_default hal_xiaomi_fingerprint_hwservice:hwservice_manager { add find };
 
 allow hal_fingerprint_default vendor_hal_perf_hwservice:hwservice_manager find;
+
+allow hal_fingerprint_default sysfs_tp_fodstatus:chr_file r_file_perms;
+
+allow hal_fingerprint_default sysfs_tp_fodstatus:file r_file_perms;
 
 binder_call(hal_fingerprint_default, vendor_hal_perf_default)
 
