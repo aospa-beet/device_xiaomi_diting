@@ -1,0 +1,2 @@
+# Fingerprint
+genfscon sysfs /devices/virtual/touch/touch_dev/fod_press_status                    u:object_r:sysfs_tp_fodstatus:s0
