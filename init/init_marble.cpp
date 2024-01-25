@@ -83,11 +83,9 @@ void vendor_load_properties() {
     string region = GetProperty("ro.boot.hwc", "");
 
     if (region == "CN") { // China
-        set_device_props("Redmi", "diting", "23049RAD8C", "diting", "Redmi Note 12 Turbo");
-    } else if (region == "IN") { // India
-        set_device_props("POCO", "ditingin", "23049PCD8I", "ditingin", "POCO F5");
+        set_device_props("Redmi", "diting", "22081212C", "diting", "Redmi K50 Ultra");
     } else { // Global
-        set_device_props("POCO", "diting", "23049PCD8G", "diting_global", "POCO F5");
+        set_device_props("Xiaomi", "diting", "22081212UG", "ditingp_global", "Xiaomi 12T Pro");
     }
 
     // Set hardware revision
