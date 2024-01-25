@@ -42,6 +42,10 @@ BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/configs/hidl/device_framework_compatibility_matrix.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_diting
+TARGET_RECOVERY_DEVICE_MODULES := libinit_diting
+
 # Kernel
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
