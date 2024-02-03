@@ -167,6 +167,7 @@ vendor/etc/audio_policy_engine_default_stream_volumes.xml
 vendor/etc/audio_policy_engine_product_strategies.xml
 vendor/etc/audio_policy_engine_stream_volumes.xml
 vendor/etc/audio_policy_volumes.xml
+vendor/etc/backend_conf.xml
 vendor/etc/card-defs.xml
 vendor/etc/kvh2xml.xml
 vendor/etc/microphone_characteristics.xml
@@ -376,6 +377,7 @@ vendor/lib64/com.qualcomm.mcx.policy.mfl.so
 vendor/lib64/com.qualcomm.mcx.policy.xr.so
 vendor/lib64/com.qualcomm.qti.mcx.usecase.extension.so
 vendor/lib64/libAF.so
+vendor/lib64/libHISCppAlgos.so
 vendor/lib64/libMiMotion.so
 vendor/lib64/libPlatformValidatorShared.so
 vendor/lib64/libQnnHtpAltPrepV69Stub.so
@@ -2040,7 +2042,8 @@ vendor/firmware/goodix_cfg_group_l12.bin
 vendor/firmware/goodix_cfg_group_l12_new.bin
 vendor/firmware/goodix_firmware_l12.bin
 vendor/firmware/goodix_firmware_l12_new.bin
-vendor/firmware/novatek_spi_fw.bin
+vendor/firmware/goodix_test_limits_1_255.csv
+vendor/firmware/goodix_test_limits_255.csv
 vendor/firmware/st_fts_l12.ftb
 vendor/firmware/stm_fts_production_limits.csv
 
