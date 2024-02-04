@@ -8,7 +8,7 @@
 
 set -e
 
-DEVICE=marble
+DEVICE=sm8450-common
 VENDOR=xiaomi
 
 # Load extract_utils and do some sanity checks
