@@ -1,4 +1,4 @@
-# Device proprietary files - from marble HyperOS V816.0.2.0.UMRMIXM package, unless pinned
+# Device proprietary files - from diting HyperOS V816.0.1.0.ULFEUXM package, unless pinned
 
 # ADSP
 vendor/bin/adsprpcd
@@ -18,7 +18,6 @@ vendor/lib64/soundfx/libqcomvisualizer.so
 vendor/lib64/soundfx/libqcomvoiceprocessing.so
 vendor/lib64/soundfx/libshoebox.so
 vendor/lib64/soundfx/libvolumelistener.so
-vendor/lib64/lib_misound_asc.so
 vendor/lib64/libadm.so
 vendor/lib64/libagm_compress_plugin.so
 vendor/lib64/libagm_mixer_plugin.so
@@ -30,7 +29,6 @@ vendor/lib64/libar-gpr.so
 vendor/lib64/libar-gsl.so
 vendor/lib64/libar-pal.so
 vendor/lib64/libats.so
-vendor/lib64/libawcal.so
 vendor/lib64/libbatterylistener.so
 vendor/lib64/libfmpal.so
 vendor/lib64/libkaraokepal.so
@@ -66,6 +64,7 @@ vendor/etc/audio_cloud_control_white_list.xml
 vendor/etc/audio_policy_engine_default_stream_volumes.xml
 vendor/etc/audio_policy_engine_product_strategies.xml
 vendor/etc/audio_policy_engine_stream_volumes.xml
+vendor/etc/backend_conf.xml
 vendor/etc/card-defs.xml
 vendor/etc/kvh2xml.xml
 vendor/etc/microphone_characteristics.xml
@@ -223,7 +222,6 @@ vendor/lib64/libsdmextension.so
 vendor/lib64/libsdmutils.so
 
 # Displayfeature
-odm/lib64/libhdrmode.so
 vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
 vendor/bin/displayfeature
 vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc
@@ -416,7 +414,7 @@ vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.1.so
 
 # GPU drivers
-vendor/app/com.qualcomm.qti.gpudrivers.taro.api32/com.qualcomm.qti.gpudrivers.taro.api32.apk;PRESIGNED
+vendor/app/com.qualcomm.qti.gpudrivers.taro.api31/com.qualcomm.qti.gpudrivers.taro.api31.apk;PRESIGNED
 
 # Hotword enrollment
 product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND.apk
@@ -446,7 +444,7 @@ vendor/lib64/libspcom.so
 # Keymint
 vendor/bin/hw/android.hardware.security.keymint-service-qti
 vendor/etc/init/android.hardware.security.keymint-service-qti.rc
-vendor/etc/vintf/manifest/android.hardware.security.keymint-service-qti-rkp.xml
+vendor/etc/vintf/manifest/android.hardware.security.keymint-service-qti.xml
 vendor/lib64/libqtikeymint.so
 
 # Limits
@@ -671,6 +669,9 @@ vendor/etc/init/qcrilNrd.rc
 vendor/etc/init/vendor.qti.rmt_storage.rc
 vendor/etc/init/vendor.qti.tftp.rc
 vendor/etc/qcril_database/upgrade/config/10.0_config.sql
+vendor/etc/qcril_database/upgrade/config/11.0_config.sql
+vendor/etc/qcril_database/upgrade/config/12.0_config.sql
+vendor/etc/qcril_database/upgrade/config/13.0_config.sql
 vendor/etc/qcril_database/upgrade/config/14.0_config.sql
 vendor/etc/qcril_database/upgrade/config/6.0_config.sql
 vendor/etc/qcril_database/upgrade/config/7.0_config.sql
@@ -678,6 +679,8 @@ vendor/etc/qcril_database/upgrade/config/8.0_config.sql
 vendor/etc/qcril_database/upgrade/config/9.0_config.sql
 vendor/etc/qcril_database/upgrade/other/0_initial_qcrilnr.sql
 vendor/etc/qcril_database/upgrade/other/10_version_update_ecc_table.sql
+vendor/etc/qcril_database/upgrade/other/11_version_update_ecc_table.sql
+vendor/etc/qcril_database/upgrade/other/12_version_update_ecc_table.sql
 vendor/etc/qcril_database/upgrade/other/1_version_intro_qcrilnr.sql
 vendor/etc/qcril_database/upgrade/other/2_version_add_wps_config_qcrilnr.sql
 vendor/etc/qcril_database/upgrade/other/3_version_update_wps_config_qcrilnr.sql
