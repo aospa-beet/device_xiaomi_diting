@@ -24,6 +24,19 @@ $(call inherit-product-if-exists, vendor/xiaomi/firmware/diting/config.mk)
 # Characteristics
 PRODUCT_CHARACTERISTICS := nosdcard
 
+# Overlays
+PRODUCT_PACKAGES += \
+    AOSPADitingFrameworksOverlay \
+    DitingFrameworksOverlay \
+    DitingNfcOverlay \
+    DitingpSettingsProviderOverlay \
+    DitingpWifiOverlay \
+    DitingpWifiMainlineOverlay \
+    DitingSettingsProviderOverlay \
+    DitingSystemUIOverlay \
+    DitingWifiOverlay \
+    DitingWifiMainlineOverlay
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
