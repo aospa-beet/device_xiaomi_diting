@@ -53,6 +53,10 @@ PRODUCT_PACKAGES += \
     DitingWifiOverlay \
     DitingWifiMainlineOverlay
 
+# Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@2.1-service.xiaomi-multihal
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
