@@ -1,0 +1,11 @@
+runtime_resource_overlay {
+    name: "DitingpWifiOverlay",
+    manifest: "AndroidManifest.xml",
+    device_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "DitingpWifiMainlineOverlay",
+    manifest: "AndroidManifestMainline.xml",
+    device_specific: true,
+}

@@ -18,6 +18,19 @@ $(call inherit-product, device/xiaomi/sm8450-common/common.mk)
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/diting/diting-vendor.mk)
 
+# Overlays
+PRODUCT_PACKAGES += \
+    AOSPADitingFrameworksOverlay \
+    DitingFrameworksOverlay \
+    DitingNfcOverlay \
+    DitingpSettingsProviderOverlay \
+    DitingpWifiOverlay \
+    DitingpWifiMainlineOverlay \
+    DitingSettingsProviderOverlay \
+    DitingSystemUIOverlay \
+    DitingWifiOverlay \
+    DitingWifiMainlineOverlay
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)

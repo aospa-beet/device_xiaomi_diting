@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2024 Paranoid Android
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+     <!-- The bounding path of the cutout region of the main built-in display.
+          Must either be empty if there is no cutout region, or a string that is parsable by
+          {@link android.util.PathParser}.
+          The path is assumed to be specified in display coordinates with pixel units and in
+          the display's native orientation, with the origin of the coordinate system at the
+          center top of the display.
+          To facilitate writing device-independent emulation overlays, the marker `@dp` can be
+          appended after the path string to interpret coordinates in dp instead of px units.
+          Note that a physical cutout should be configured in pixels for the best results.
+          Example for a 10px x 10px square top-center cutout:
+                    <string ...>M -5,0 L -5,10 L 5,10 L 5,0 Z</string>
+          Example for a 10dp x 10dp square top-center cutout:
+                    <string ...>M -5,0 L -5,10 L 5,10 L 5,0 Z @dp</string>
+          @see https://www.w3.org/TR/SVG/paths.html#PathData
+     -->
+     <string translatable="false" name="config_mainBuiltInDisplayCutout">
+          M 0,0 H -33 V 88 H 33 V 0 H 0 Z
+     </string>
+
+     <!-- Height of the status bar.
+          Do not read this dimen directly. Use {@link SystemBarUtils#getStatusBarHeight} instead.
+     -->
+     <dimen name="status_bar_height_portrait">88px</dimen>
+
+     <!-- Radius of the software rounded corners of the display in it's natural orientation-->
+     <dimen name="rounded_corner_radius">90px</dimen>
+
+     <!-- Default paddings for content around the corners. -->
+     <dimen name="rounded_corner_content_padding">36px</dimen>
+
+     <!-- Minimum screen brightness setting allowed by power manager.
+          The user is forbidden from setting the brightness below this level. -->
+     <item name="config_screenBrightnessSettingMinimumFloat" format="float" type="dimen">0.001709819</item>
+
+     <!-- Screen brightness used to dim the screen when the user activity
+          timeout expires.  May be less than the minimum allowed brightness setting
+          that can be set by the user. -->
+     <item name="config_screenBrightnessDimFloat" format="float" type="dimen">0.001709819</item>
+
+     <!-- The display uses different gamma curves for different refresh rates. It's hard for panel
+          vendors to tune the curves to have exact same brightness for different refresh rate. So
+          flicker could be observed at switch time. The issue is worse at the gamma lower end.
+          In addition, human eyes are more sensitive to the flicker at darker environment.
+          To prevent flicker, we only support higher refresh rates if the display brightness is above
+          a threshold.
+          For example, no higher refresh rate if
+              display brightness <= disp0 && ambient brightness <= amb0
+              || display brightness <= disp1 && ambient brightness <= amb1 -->
+     <integer-array name="config_brightnessThresholdsOfPeakRefreshRate">
+         <!-- System brightness for 10 nits: round((10-2)/(1000-2)*(255-1)+1) = 3 -->
+         <item>3</item> <!-- 20% UI brightness -->
+         <!-- System brightness for 15 nits: round((15-2)/(1000-2)*(255-1)+1) = 4 -->
+         <item>4</item> <!-- 24% UI brightness -->
+     </integer-array>
+     <integer-array name="config_ambientThresholdsOfPeakRefreshRate">
+         <item>-1</item>
+         <item>5</item>
+     </integer-array>
+
+     <!-- Array of desired screen brightness in nits corresponding to the lux values
+          in the config_autoBrightnessLevels array. As with config_screenBrightnessMinimumNits and
+          config_screenBrightnessMaximumNits, the display brightness is defined as the measured
+          brightness of an all-white image.
+          If this is defined then:
+            - config_autoBrightnessLcdBacklightValues should not be defined
+            - config_screenBrightnessNits must be defined
+            - config_screenBrightnessBacklight must be defined
+          This array should have size one greater than the size of the config_autoBrightnessLevels
+          array. The brightness values must be non-negative and non-decreasing. This must be
+          overridden in platform specific overlays -->
+     <array name="config_autoBrightnessDisplayValuesNits">
+          <item>4.0</item>
+          <item>4.5</item>
+          <item>5.2</item>
+          <item>17.9</item>
+          <item>24.6</item>
+          <item>32.4</item>
+          <item>34.6</item>
+          <item>44.6</item>
+          <item>56.8</item>
+          <item>76.9</item>
+          <item>83.5</item>
+          <item>84.6</item>
+          <item>84.6</item>
+          <item>84.6</item>
+          <item>85.8</item>
+          <item>85.8</item>
+          <item>85.8</item>
+          <item>88.0</item>
+          <item>88.0</item>
+          <item>90.2</item>
+          <item>90.2</item>
+          <item>90.2</item>
+          <item>90.2</item>
+          <item>91.3</item>
+          <item>91.3</item>
+          <item>92.4</item>
+          <item>94.7</item>
+          <item>95.8</item>
+          <item>96.9</item>
+          <item>98.0</item>
+          <item>99.1</item>
+          <item>100.2</item>
+          <item>101.3</item>
+          <item>102.4</item>
+          <item>103.6</item>
+          <item>104.7</item>
+          <item>105.8</item>
+          <item>106.9</item>
+          <item>108.0</item>
+          <item>110.2</item>
+          <item>112.5</item>
+          <item>115.8</item>
+          <item>116.9</item>
+          <item>119.1</item>
+          <item>123.6</item>
+          <item>143.6</item>
+          <item>165.9</item>
+          <item>177.0</item>
+          <item>210.3</item>
+          <item>232.6</item>
+          <item>288.2</item>
+          <item>299.3</item>
+          <item>310.5</item>
+          <item>377.2</item>
+          <item>410.6</item>
+          <item>444.0</item>
+          <item>455.1</item>
+          <item>477.3</item>
+          <item>488.5</item>
+          <item>536.6</item>
+          <item>555.2</item>
+          <item>561.9</item>
+          <item>571.7</item>
+          <item>579.5</item>
+          <item>592.3</item>
+          <item>608.1</item>
+          <item>625.9</item>
+          <item>640.7</item>
+          <item>656.5</item>
+          <item>671.3</item>
+          <item>686.1</item>
+          <item>701.9</item>
+          <item>717.7</item>
+          <item>733.5</item>
+          <item>749.2</item>
+          <item>765.0</item>
+          <item>781.8</item>
+          <item>797.6</item>
+          <item>814.4</item>
+          <item>827.0</item>
+          <item>840.6</item>
+          <item>853.2</item>
+          <item>866.0</item>
+          <item>879.0</item>
+          <item>892.0</item>
+          <item>905.0</item>
+          <item>918.0</item>
+          <item>931.0</item>
+          <item>949.0</item>
+          <item>969.0</item>
+          <item>979.0</item>
+          <item>989.0</item>
+          <item>989.0</item>
+          <item>989.0</item>
+          <item>989.0</item>
+          <item>989.0</item>
+          <item>989.0</item>
+          <item>989.0</item>
+          <item>989.0</item>
+          <item>989.0</item>
+          <item>989.0</item>
+          <item>989.0</item>
+          <item>989.0</item>
+          <item>989.0</item>
+          <item>989.0</item>
+          <item>989.0</item>
+          <item>989.0</item>
+          <item>989.0</item>
+     </array>
+
+     <!-- An array of floats describing the screen brightness in nits corresponding to the backlight
+          values in the config_screenBrightnessBacklight array.  On OLED displays these  values
+          should be measured with an all white image while the display is in the fully on state.
+          Note that this value should *not* reflect the maximum brightness value for any high
+          brightness modes but only the maximum brightness value obtainable in a sustainable manner.
+
+          This array should be equal in size to config_screenBrightnessBacklight -->
+     <array name="config_screenBrightnessNits">
+          <item>2.0</item>
+          <item>900.0</item>
+     </array>
+
+</resources>
