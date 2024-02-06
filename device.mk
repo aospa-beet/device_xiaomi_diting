@@ -28,6 +28,20 @@ PRODUCT_SYSTEM_PROPERTIES += \
 # Characteristics
 PRODUCT_CHARACTERISTICS := nosdcard
 
+# Display
+PRODUCT_ODM_PROPERTIES += \
+    vendor.display.disable_3d_adaptive_tm=0 \
+    vendor.display.enable_rounded_corner=0
+
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.vendor.display.ai_disp.enable=true \
+    ro.vendor.display.hwc_thermal_dimming=true \
+    ro.vendor.display.mi_calib.enable=true \
+    ro.vendor.display.nature_mode.enable=true \
+    ro.vendor.histogram.enable=true \
+    ro.vendor.sre.enable=true \
+    ro.vendor.xiaomi.bl.poll=true
+
 # EUICC
 PRODUCT_PACKAGES += \
    XiaomiEuicc

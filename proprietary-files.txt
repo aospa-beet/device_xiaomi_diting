@@ -970,6 +970,72 @@ vendor/lib64/camera/com.qti.tuned.diting_sunny_s5khm6_wide.bin
 # Camera sensors (CN) - from HyperOS V816.0.2.0.ULFCNXM
 vendor/lib64/camera/com.qti.sensormodule.diting_sunny_s5khm6_wide.bin|83132d46c26cbd520005539693f2e8f7095f7409
 
+# Display
+vendor/bin/hw/vendor.qti.hardware.display.composer-service
+vendor/lib64/libclient2slpi.notifier.so
+vendor/lib64/libdisplayconfig.qti.so
+vendor/lib64/libhdrdynamic.so
+vendor/lib64/libhdrdynamicootf.so
+vendor/lib64/libsdedrm.so
+vendor/lib64/libsdm-disp-vndapis.so
+vendor/lib64/libsdmcore.so
+vendor/lib64/libsdmextension.so
+vendor/lib64/libsdmutils.so
+
+# Displayfeature
+vendor/bin/displayfeature
+vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
+vendor/etc/df_default.xml
+vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc
+vendor/etc/miLutInfo.txt
+vendor/etc/miLut_0.txt
+vendor/etc/miLut_1.txt
+vendor/etc/miLut_10.txt
+vendor/etc/miLut_11.txt
+vendor/etc/miLut_12.txt
+vendor/etc/miLut_13.txt
+vendor/etc/miLut_14.txt
+vendor/etc/miLut_15.txt
+vendor/etc/miLut_16.txt
+vendor/etc/miLut_17.txt
+vendor/etc/miLut_18.txt
+vendor/etc/miLut_19.txt
+vendor/etc/miLut_2.txt
+vendor/etc/miLut_20.txt
+vendor/etc/miLut_3.txt
+vendor/etc/miLut_4.txt
+vendor/etc/miLut_5.txt
+vendor/etc/miLut_6.txt
+vendor/etc/miLut_7.txt
+vendor/etc/miLut_8.txt
+vendor/etc/miLut_9.txt
+vendor/etc/mi_gc_0.txt
+vendor/etc/mi_gc_1.txt
+vendor/etc/mi_gc_2.txt
+vendor/etc/vintf/manifest/vendor.xiaomi.hardware.displayfeature@1.0-service.xml
+vendor/lib64/hw/displayfeature.default.so
+vendor/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
+vendor/lib64/libMiDispDevManager.so
+vendor/lib64/libcolortempmode.so
+vendor/lib64/libdisplaycount.so
+vendor/lib64/libdisplayfeature.so
+vendor/lib64/libdisplayfeatureservice.so
+vendor/lib64/libdither.so
+vendor/lib64/libeyecare.so
+vendor/lib64/libflatmode.so
+vendor/lib64/libfpsmonitor.so
+vendor/lib64/libmi-stc-HW-modulate.so
+vendor/lib64/libmiBrightness.so
+vendor/lib64/libmiSensorCtrl.so
+vendor/lib64/libmiXmlParser.so
+vendor/lib64/libmi_dspp.so
+vendor/lib64/libpaperMode.so
+vendor/lib64/libsdr2hdr.so
+vendor/lib64/libsre.so
+vendor/lib64/libtruetone.so
+vendor/lib64/libvideomode.so
+vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
+
 # Display calibration
 vendor/etc/display/qdcm_calib_data_xiaomi_36_02_0b_mp_cmd_mode_dsc_dsi_panel.json
 vendor/etc/display/qdcm_calib_data_xiaomi_42_02_0a_mp_cmd_mode_dsc_dsi_panel.json
@@ -979,6 +1045,7 @@ vendor/etc/mdss_dsi_l12_42_02_0a_dsc_cmd_mi.xml
 # Display configs
 product/etc/displayconfig/display_id_4630946480857061762.xml:vendor/etc/displayconfig/display_id_4630946480857061762.xml
 product/etc/displayconfig/display_id_4630946545580055170.xml:vendor/etc/displayconfig/display_id_4630946545580055170.xml
+vendor/etc/snapdragon_color_libs_config.xml
 
 # eUICC - from OnePlus 11 CPH2449_14.0.0.401(EX01)
 product/etc/permissions/privapp-permissions-euiccgoogle.xml|58ddaa5bbff62eefd2d5c39900b7b29fd177def1

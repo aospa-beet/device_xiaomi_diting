@@ -14,6 +14,14 @@ function blob_fixup() {
         vendor/etc/camera/pureView_parameter.xml)
             sed -i "s/=\([0-9]\+\)>/=\"\1\">/g" "${2}"
             ;;
+        vendor/lib64/hw/displayfeature.default.so)
+            "${PATCHELF}" --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${2}"
+            ;;
+        vendor/bin/hw/vendor.qti.hardware.display.composer-service)
+            "${PATCHELF}" --remove-needed "libutils.so" "${2}"
+            "${PATCHELF}" --add-needed "libutils-v32.so" "${2}"
+            "${PATCHELF}" --add-needed "libutils-shim.so" "${2}"
+            ;;
     esac
 }
 
