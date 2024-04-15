@@ -29,3 +29,6 @@ TARGET_OTA_ASSERT_DEVICE := diting|ditingp
 
 # Screen density
 TARGET_SCREEN_DENSITY := 480
+
+# Vibrator
+$(call soong_config_set, XIAOMI_VIBRATOR, USE_EFFECT_STREAM, true)
