@@ -28,6 +28,9 @@ PRODUCT_SYSTEM_PROPERTIES += \
 # Characteristics
 PRODUCT_CHARACTERISTICS := nosdcard
 
+# Kernel
+KERNEL_PREBUILT_DIR := $(LOCAL_PATH)-kernel
+
 # Overlays
 PRODUCT_PACKAGES += \
     AOSPADitingFrameworksOverlay \
