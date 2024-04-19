@@ -22,3 +22,6 @@ include vendor/xiaomi/diting/BoardConfigVendor.mk
 
 # OTA
 TARGET_OTA_ASSERT_DEVICE := diting|ditingp
+
+# Screen density
+TARGET_SCREEN_DENSITY := 480
