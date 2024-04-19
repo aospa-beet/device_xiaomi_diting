@@ -35,14 +35,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml
 
-# Fingerprint
-PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.xiaomi \
-    libudfpshandler
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/init.diting.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.diting.rc
-
 # Kernel
 KERNEL_PREBUILT_DIR := $(LOCAL_PATH)-kernel
 
