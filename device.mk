@@ -39,6 +39,7 @@ PRODUCT_PACKAGES += \
     DitingpSettingsProviderOverlay \
     DitingpWifiOverlay \
     DitingpWifiMainlineOverlay \
+    DitingSettingsOverlay \
     DitingSettingsProviderOverlay \
     DitingSystemUIOverlay \
     DitingWifiOverlay \
