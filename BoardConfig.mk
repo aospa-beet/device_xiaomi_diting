@@ -20,6 +20,10 @@ include device/xiaomi/sm8450-common/BoardConfigCommon.mk
 # Include proprietary files
 include vendor/xiaomi/diting/BoardConfigVendor.mk
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_diting
+TARGET_RECOVERY_DEVICE_MODULES := libinit_diting
+
 # OTA
 TARGET_OTA_ASSERT_DEVICE := diting|ditingp
 
