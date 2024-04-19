@@ -21,6 +21,10 @@ $(call inherit-product, vendor/xiaomi/diting/diting-vendor.mk)
 # Firmware
 $(call inherit-product-if-exists, vendor/xiaomi/firmware/diting/config.mk)
 
+# Camera
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.product.mod_device=diting_global
+
 # Characteristics
 PRODUCT_CHARACTERISTICS := nosdcard
 
