@@ -19,3 +19,6 @@ include device/xiaomi/sm8450-common/BoardConfigCommon.mk
 
 # Include proprietary files
 include vendor/xiaomi/diting/BoardConfigVendor.mk
+
+# OTA
+TARGET_OTA_ASSERT_DEVICE := diting|ditingp
