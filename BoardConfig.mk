@@ -20,8 +20,9 @@ include device/xiaomi/sm8450-common/BoardConfigCommon.mk
 # Include proprietary files
 include vendor/xiaomi/diting/BoardConfigVendor.mk
 
-# HIDL
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_diting
+TARGET_RECOVERY_DEVICE_MODULES := libinit_diting
 
 # OTA
 TARGET_OTA_ASSERT_DEVICE := diting|ditingp
@@ -37,3 +38,6 @@ SOONG_CONFIG_SENSORS_XIAOMI_USES_UDFPS_SENSOR := true
 
 # Screen density
 TARGET_SCREEN_DENSITY := 480
+
+# Vibrator
+$(call soong_config_set, XIAOMI_VIBRATOR, USE_EFFECT_STREAM, true)
