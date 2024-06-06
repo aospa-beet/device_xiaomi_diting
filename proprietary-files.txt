@@ -1,4 +1,4 @@
-# Device proprietary files - from diting HyperOS V816.0.2.0.ULFMIXM package, unless pinned
+# Device proprietary files - from diting HyperOS V816.0.4.0.ULFMIXM package, unless pinned
 
 # ADSP modules
 vendor/lib/rfsa/adsp/bm2n00.bin
@@ -1017,7 +1017,7 @@ vendor/lib64/camera/com.qti.tuned.diting_sunny_imx596_front.bin
 vendor/lib64/camera/com.qti.tuned.diting_sunny_s5k4h7_ultra.bin
 vendor/lib64/camera/com.qti.tuned.diting_sunny_s5khm6_wide.bin
 
-# Camera sensors (CN) - from HyperOS V816.0.2.0.ULFCNXM
+# Camera sensors (CN) - from HyperOS V816.0.4.0.ULFCNXM
 vendor/lib64/camera/com.qti.sensormodule.diting_sunny_s5khm6_wide.bin|83132d46c26cbd520005539693f2e8f7095f7409
 
 # Display
@@ -1097,8 +1097,8 @@ product/etc/displayconfig/display_id_4630946480857061762.xml:vendor/etc/displayc
 product/etc/displayconfig/display_id_4630946545580055170.xml:vendor/etc/displayconfig/display_id_4630946545580055170.xml
 vendor/etc/snapdragon_color_libs_config.xml
 
-# EuiccGoogle - from lynx-user 14 AP1A.240405.002 11480754 release-keys
-product/priv-app/EuiccGoogle/EuiccGoogle.apk|f1b7f3906ed81c6555191e6a9d350377b9710f11
+# EuiccGoogle - from lynx-user 14 AP1A.240405.002.B1 11677284 release-keys
+product/priv-app/EuiccGoogle/EuiccGoogle.apk|eaa0b9a52fe26fe445b091e034f6ca1e16621c4a
 
 # Fingerprint
 odm/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so
